@@ -1,18 +1,18 @@
 {
   "product": "WiseGPO",
   "board": "ESP32-P4-ETH",
-  "version": "1.14",
-  "ota_url": "https://raw.githubusercontent.com/zouzousaade/wisegpo-updates/main/WiseGPO-1.14-OTA.bin",
-  "ota_api_url": "https://api.github.com/repos/zouzousaade/wisegpo-updates/contents/WiseGPO-1.14-OTA.bin?ref=main",
-  "sha256": "958cf556c7f62dac505a52fdf57884999a37f89aad3d3af788c2b12bca755ac7",
-  "notes": "Adds a modern WiseGPO installation screen and clearer, reliable IP reporting.",
+  "version": "1.15",
+  "ota_url": "https://raw.githubusercontent.com/zouzousaade/wisegpo-updates/main/WiseGPO-1.15-OTA.bin",
+  "ota_api_url": "https://api.github.com/repos/zouzousaade/wisegpo-updates/contents/WiseGPO-1.15-OTA.bin?ref=main",
+  "sha256": "071952b14a827e3070b19db6c562ea14ae64300bc9c464f0678161c16e0e6fab",
+  "notes": "Adds stoppable discovery and direct OTA installation from both wiseTool screens.",
   "added": [
-    "wiseTool presents installation with a clear phase, percentage, progress bar, and concise diagnostics.",
-    "All user-facing hardware names now use WiseGPO terminology.",
-    "Detected fixed and custom IP addresses remain visible while optional assignment completes."
+    "Network discovery can be stopped at any time.",
+    "Discovered WiseGPO units can be updated immediately while scanning continues.",
+    "OTA firmware installs directly from both the home screen and Finder without opening a browser."
   ],
   "fixed": [
-    "The Windows online checker uses TLS 1.2 reliably.",
-    "Post-installation status no longer replaces a detected IP with a network-assignment error."
+    "Finder controls remain responsive throughout network discovery.",
+    "Home-screen OTA installation automatically reads the connected WiseGPO IP when needed."
   ]
 }
