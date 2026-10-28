@@ -1,18 +1,19 @@
 {
   "product": "WiseGPO",
   "board": "ESP32-P4-ETH",
-  "version": "1.12",
-  "ota_url": "https://raw.githubusercontent.com/zouzousaade/wisegpo-updates/main/WiseGPO-1.12-ESP32P4-OTA.bin",
-  "ota_api_url": "https://api.github.com/repos/zouzousaade/wisegpo-updates/contents/WiseGPO-1.12-ESP32P4-OTA.bin?ref=main",
-  "sha256": "55ba163b80df080363c7d3132d10bf23ae23430b6077907befd2b533027f2f65",
-  "notes": "Local firmware files now show their release notes, wiseTool recognizes WiseGPO serial devices, and OTA completion reporting is more reliable.",
+  "version": "1.13",
+  "ota_url": "https://raw.githubusercontent.com/zouzousaade/wisegpo-updates/main/WiseGPO-1.13-ESP32P4-OTA.bin",
+  "ota_api_url": "https://api.github.com/repos/zouzousaade/wisegpo-updates/contents/WiseGPO-1.13-ESP32P4-OTA.bin?ref=main",
+  "sha256": "3518246f1920c7f39c3fc1dc18841b3ccb750c47679ebae60afff68ac9c23fca",
+  "notes": "Fixes the blank WiseGPO control page, GitHub TLS checks in wiseTool, and post-flash IP reporting.",
   "added": [
     "Local OTA files display embedded What's new and Fixes notes before installation.",
-    "wiseTool automatically refreshes serial ports and selects a connected WiseGPO.",
-    "Recognized WiseGPO serial ports are labeled beside their COM port."
+    "wiseTool automatically labels and selects connected WiseGPO serial devices.",
+    "IP detection keeps the discovered fixed address visible while automatic assignment completes."
   ],
   "fixed": [
-    "Local firmware selection now provides meaningful release information instead of only the filename.",
-    "Completed OTA transfers are no longer reported as connection failures when the unit restarts."
+    "The main Web interface now initializes reliably without an embedded NUL character in its script.",
+    "wiseTool uses TLS 1.2 for GitHub online-update checks.",
+    "Post-flash Ethernet detection now waits longer for the controller to become ready."
   ]
 }
