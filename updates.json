@@ -1,19 +1,18 @@
 {
   "product": "WiseGPO",
   "board": "ESP32-P4-ETH",
-  "version": "1.11",
-  "ota_url": "https://raw.githubusercontent.com/zouzousaade/wisegpo-updates/main/WiseGPO-1.11-ESP32P4-OTA.bin",
-  "ota_api_url": "https://api.github.com/repos/zouzousaade/wisegpo-updates/contents/WiseGPO-1.11-ESP32P4-OTA.bin?ref=main",
-  "sha256": "611e9ba2c84316aaa5dd978dfaf3b29390a1364912145ea28ef71927557ed7e9",
-  "notes": "Browser OTA downloads now use GitHub's API and wiseTool can check and download the latest published WiseGPO firmware.",
+  "version": "1.12",
+  "ota_url": "https://raw.githubusercontent.com/zouzousaade/wisegpo-updates/main/WiseGPO-1.12-ESP32P4-OTA.bin",
+  "ota_api_url": "https://api.github.com/repos/zouzousaade/wisegpo-updates/contents/WiseGPO-1.12-ESP32P4-OTA.bin?ref=main",
+  "sha256": "55ba163b80df080363c7d3132d10bf23ae23430b6077907befd2b533027f2f65",
+  "notes": "Local firmware files now show their release notes, wiseTool recognizes WiseGPO serial devices, and OTA completion reporting is more reliable.",
   "added": [
-    "wiseTool can check GitHub for the latest WiseGPO release and download a verified OTA image.",
-    "Firmware selection in wiseTool now opens with .bin as the default file type.",
-    "Online updates continue to show separate What's new and Fixes sections."
+    "Local OTA files display embedded What's new and Fixes notes before installation.",
+    "wiseTool automatically refreshes serial ports and selects a connected WiseGPO.",
+    "Recognized WiseGPO serial ports are labeled beside their COM port."
   ],
   "fixed": [
-    "Fixed browser-based online installation failing with 'Failed to fetch'.",
-    "The OTA binary is now fetched through GitHub's Contents API and verified before installation.",
-    "Firmware integrity remains verified on the ESP before its boot partition is changed."
+    "Local firmware selection now provides meaningful release information instead of only the filename.",
+    "Completed OTA transfers are no longer reported as connection failures when the unit restarts."
   ]
 }
