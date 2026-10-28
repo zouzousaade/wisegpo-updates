@@ -1,16 +1,19 @@
 {
   "product": "WiseGPO",
   "board": "ESP32-P4-ETH",
-  "version": "1.10",
-  "ota_url": "https://raw.githubusercontent.com/zouzousaade/wisegpo-updates/main/WiseGPO-1.10-ESP32P4-OTA.bin",
-  "sha256": "caf714bdcfe6e2250dab536446202a76caf1da993ffd7377f6e8a41cc36f62f4",
-  "notes": "The main page now displays the software version and online update checks include structured release notes.",
+  "version": "1.11",
+  "ota_url": "https://raw.githubusercontent.com/zouzousaade/wisegpo-updates/main/WiseGPO-1.11-ESP32P4-OTA.bin",
+  "ota_api_url": "https://api.github.com/repos/zouzousaade/wisegpo-updates/contents/WiseGPO-1.11-ESP32P4-OTA.bin?ref=main",
+  "sha256": "611e9ba2c84316aaa5dd978dfaf3b29390a1364912145ea28ef71927557ed7e9",
+  "notes": "Browser OTA downloads now use GitHub's API and wiseTool can check and download the latest published WiseGPO firmware.",
   "added": [
-    "The main page displays Software version 1.10 below the WiseGPO name.",
-    "Online updates show separate What's new and Fixes sections before installation."
+    "wiseTool can check GitHub for the latest WiseGPO release and download a verified OTA image.",
+    "Firmware selection in wiseTool now opens with .bin as the default file type.",
+    "Online updates continue to show separate What's new and Fixes sections."
   ],
   "fixed": [
-    "The update checker now reads the current GitHub manifest without stale raw-file caching.",
+    "Fixed browser-based online installation failing with 'Failed to fetch'.",
+    "The OTA binary is now fetched through GitHub's Contents API and verified before installation.",
     "Firmware integrity remains verified on the ESP before its boot partition is changed."
   ]
 }
