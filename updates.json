@@ -3,6 +3,6 @@
   "board": "ESP32-P4-ETH",
   "version": "1.8",
   "ota_url": "https://raw.githubusercontent.com/zouzousaade/wisegpo-updates/main/WiseGPO-1.8-ESP32P4-OTA.bin",
-  "sha256": "0b1312a459501bdaa9f1d51fdd6efe1684aa5ef22cf5390360a7125ddf970042",
+  "sha256": "d8af8b311aa43ec63dff8acc0314ee8aa0e67986fe6797f76f83e469d0489b8b",
   "notes": "Adds manual online updates and a looping 0.5-second sequential GPO test with Start/Stop control."
 }
