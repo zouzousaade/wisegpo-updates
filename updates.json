@@ -1,8 +1,16 @@
 {
   "product": "WiseGPO",
   "board": "ESP32-P4-ETH",
-  "version": "1.9",
-  "ota_url": "https://raw.githubusercontent.com/zouzousaade/wisegpo-updates/main/WiseGPO-1.9-ESP32P4-OTA.bin",
-  "sha256": "ef9c7493f3ae34fbea8edb2309aaa035f48cd2eb300e928e2f9206e50033f6c7",
-  "notes": "The main page now displays the installed software version instead of the hardware-description subtitle."
+  "version": "1.10",
+  "ota_url": "https://raw.githubusercontent.com/zouzousaade/wisegpo-updates/main/WiseGPO-1.10-ESP32P4-OTA.bin",
+  "sha256": "caf714bdcfe6e2250dab536446202a76caf1da993ffd7377f6e8a41cc36f62f4",
+  "notes": "The main page now displays the software version and online update checks include structured release notes.",
+  "added": [
+    "The main page displays Software version 1.10 below the WiseGPO name.",
+    "Online updates show separate What's new and Fixes sections before installation."
+  ],
+  "fixed": [
+    "The update checker now reads the current GitHub manifest without stale raw-file caching.",
+    "Firmware integrity remains verified on the ESP before its boot partition is changed."
+  ]
 }
