@@ -1,4 +1,4 @@
-# WiseGPO updates
+# Wise Concepts GPIO updates
 
 Public OTA update feed for WiseConcepts WiseGPO controllers based on the
 Waveshare ESP32-P4-ETH.
@@ -13,3 +13,9 @@ What's new and Fixes notes, and download a checksum-verified OTA image.
 
 The repository intentionally contains only public update artifacts. It does
 not contain credentials, private keys, device settings, or the firmware source.
+
+## WiseGPI input controllers
+
+[WiseGPI firmware downloads and online updates](wisegpi/README.md)
+
+WiseGPI has a dedicated feed in `wisegpi/updates.json`, with one bundle for ESP32-P4 Rev 1 and Rev 3.
