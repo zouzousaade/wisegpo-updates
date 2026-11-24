@@ -1,0 +1,32 @@
+{
+  "product": "WiseGPI",
+  "board": "ESP32-P4-ETH",
+  "version": "2.3",
+  "bundle_url": "https://raw.githubusercontent.com/zouzousaade/wisegpo-updates/main/wisegpi/WiseGPI-2.3-ESP32P4.wisegpi",
+  "bundle_size": 2547096,
+  "sha256": "97e19fb5d690ddfe111110f6bf158d82668999e034df0002c2986cda4ddce99e",
+  "images": [
+    {
+      "min_revision": 100,
+      "max_revision": 199,
+      "offset": 24,
+      "length": 570192,
+      "sha256": "3b5bb6667dc267957ec035270eea173df5b37a8c1d5ca61318c30e78b610464a"
+    },
+    {
+      "min_revision": 300,
+      "max_revision": 399,
+      "offset": 1271480,
+      "length": 572272,
+      "sha256": "83039f7c0e891d4b1f31f5a534ceb4dc8e2bc60a7e158b53de831afbfc6c8fd2"
+    }
+  ],
+  "notes": "Adds online updates with automatic board revision selection and stale web connection cleanup.",
+  "added": [
+    "Check online and install updates from Advanced settings.",
+    "One bundle supports ESP32-P4 Rev 1 and Rev 3, OTA and USB installation."
+  ],
+  "fixed": [
+    "Reclaims stale browser connections to prevent web session exhaustion."
+  ]
+}
